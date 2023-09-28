@@ -1,3 +1,6 @@
+## Astro's fork
+Designed for use with a magspoof GPIO module, therefore getting rid of additional Tx options ~~so I don't have to learn how to properly make flipper apps~~ to avoid confusion.
+
 # magspoof_flipper by Zachary Weiss
 WIP of MagSpoof for the Flipper Zero. Basic TX of saved files confirmed working against an MSR90 with an external H-bridge module mirroring Samy Kamkar's design. RFID coil output weaker; able to be picked up/detected by more compact mag readers such as Square, but yet to have success with it being decoded/parsed properly. Additional investigation into alternate internal TX options (CC1101, ST25R3916, piezo) underway; tentatively, RFID coil + speaker (`LF + P` config setting) results in the strongest internal TX tested to date but still weaker than a dedicated external module or an actual card swipe (and sounds like a dial-up modem from hell). Sample files with test data are included in `assets` for anyone wishing to experiment.
 
